@@ -16,7 +16,7 @@ const ListaPost = ({url}) => {
     <section className="posts container">
       {console.log(posts)}
       {posts.map(post => 
-        <Link to="#" className={`cartao-post cartao-post--${post.categoria}`}>
+        <Link to={`/posts/${post.id}`} className={`cartao-post cartao-post--${post.categoria}`}>
           <article key={post.id}>
             <h3 className='cartao-post__titulo'>
               {post.title}

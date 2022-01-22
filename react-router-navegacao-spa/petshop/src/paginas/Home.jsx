@@ -3,7 +3,7 @@ import ListaCategorias from '../components/ListaCategorias'
 import ListaPost from '../components/ListaPost'
 
 const Home = () => {
-  console.log("chamo1u?")
+ 
   return (
     <main>
       <div className="container">

@@ -4,18 +4,18 @@ import {busca} from '../api/api'
 import '../assets/css/blog.css'
 
 const ListaCategorias = () => {
-  console.log("chamou?")
+  console.log("RENDERIZANDO LISTA DE CATEGORIAS")
   const [categorias,setCategorias] = useState([])
 
   useEffect(() => {
-    console.log("teste");
+  
     busca("/categorias",setCategorias)
   },[])
 
   return(
     <ul className='lista-categorias container flex'>
       {categorias.map(categoria => 
-        <Link to={`categoria/${categoria.id}`}>
+        <Link to={`/categoria/${categoria.id}`}>
           <li className={`lista-categorias__categoria lista-categorias__categoria--${categoria.id}`}>
             {categoria.nome}
           </li>

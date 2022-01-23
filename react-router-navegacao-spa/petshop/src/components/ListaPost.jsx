@@ -14,7 +14,7 @@ const ListaPost = ({url}) => {
   
   return (
     <section className="posts container">
-      {console.log(posts)}
+      
       {posts.map(post => 
         <Link to={`/posts/${post.id}`} className={`cartao-post cartao-post--${post.categoria}`}>
           <article key={post.id}>
